@@ -1,0 +1,50 @@
+{
+	"scripts": {
+		"AppManager": "autoloads/AppManager.cs",
+		"AppSettings": "autoloads/AppSettings.cs",
+		"CommandHandler": "autoloads/CommandHandler.cs",
+		"ECS": "autoloads/ECS.cs",
+		"EventSystem": "autoloads/EventSystem.cs",
+		"Helper": "autoloads/Helper.cs",
+		"InputManager": "autoloads/InputManager.cs",
+		"LevelManager": "autoloads/LevelManager.cs",
+		"NetworkDataManager": "autoloads/NetworkDataManager.cs",
+		"NetworkManager": "autoloads/NetworkManager.cs",
+		"ResourceManager": "autoloads/ResourceManager.cs",
+		"SaveManager": "autoloads/SaveManager.cs",
+		"SoundManager": "autoloads/SoundManager.cs",
+		"SteamDataManager": "autoloads/SteamDataManager.cs",
+		"SteamManager": "autoloads/SteamManager.cs",
+		"JsonValue": "classes/JsonValue.cs",
+		"MultiMap": "classes/MultiMap.cs",
+		"StateMachine": "classes/StateMachine.cs",
+		"EntityContainer": "scripts/EntityContainer.cs",
+		"NetworkTransform": "scripts/NetworkTransform.cs",
+		"Player": "scripts/Player.cs",
+		"Component": "classes/ECS/Component.cs",
+		"Entity": "classes/ECS/Entity.cs",
+		"ISystem": "classes/ECS/ISystem.cs",
+		"DataConverter": "classes/static/DataConverter.cs",
+		"FileManager": "classes/static/FileManager.cs",
+		"Globals": "classes/static/Globals.cs",
+		"BMAudioStreamPlayer3D": "scripts/bm_wrappers_3D/BMAudioStreamPlayer3D.cs",
+		"BMCamera3D": "scripts/bm_wrappers_3D/BMCamera3D.cs",
+		"BMDirLight3D": "scripts/bm_wrappers_3D/BMDirLight3D.cs",
+		"BMMeshInstance3D": "scripts/bm_wrappers_3D/BMMeshInstance3D.cs",
+		"BMAudioStreamPlayer": "scripts/bm_wrappers_other/BMAudioStreamPlayer.cs",
+		"BMButton": "scripts/bm_wrapper_2D/BMButton.cs",
+		"AudioData": "scripts/resources/AudioData.cs",
+		"EntityData": "scripts/resources/EntityData.cs",
+		"DeveloperConsole": "scripts/ui/DeveloperConsole.cs",
+		"MainMenu": "scripts/ui/MainMenu.cs"
+	},
+	"scenes": {
+		"DeveloperConsole": "scenes/DeveloperConsole.tscn",
+		"Player": "scenes/Player.tscn"
+	},
+	"levels": {
+		"Main": "levels/Main.tscn",
+		"MainMenu": "levels/MainMenu.tscn",
+		"StartUp": "levels/StartUp.tscn"
+	}
+}

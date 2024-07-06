@@ -1,0 +1,17 @@
+[gd_scene load_steps=5 format=3 uid="uid://7s8kvuqee6qr"]
+
+[ext_resource type="Script" path="res://scripts/Player.cs" id="1_gn5xk"]
+[ext_resource type="Script" path="res://scripts/NetworkTransform.cs" id="2_5ohrt"]
+[ext_resource type="Script" path="res://scripts/bm_wrappers_3D/BMMeshInstance3D.cs" id="3_y5jur"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_57ovd"]
+
+[node name="Player" type="Node3D"]
+script = ExtResource("1_gn5xk")
+
+[node name="NetworkTransform" type="Node" parent="."]
+script = ExtResource("2_5ohrt")
+
+[node name="BMMeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_57ovd")
+script = ExtResource("3_y5jur")

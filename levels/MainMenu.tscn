@@ -1,0 +1,40 @@
+[gd_scene load_steps=3 format=3 uid="uid://1mo8bc0csslb"]
+
+[ext_resource type="Script" path="res://scripts/ui/MainMenu.cs" id="1_r0p72"]
+[ext_resource type="Script" path="res://scripts/bm_wrapper_2D/BMButton.cs" id="2_4m4n7"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_r0p72")
+
+[node name="HostNewButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 154.0
+offset_top = 127.0
+offset_right = 293.0
+offset_bottom = 177.0
+text = "Host New"
+script = ExtResource("2_4m4n7")
+
+[node name="HostLoadButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 154.0
+offset_top = 298.0
+offset_right = 293.0
+offset_bottom = 348.0
+text = "Host Load"
+script = ExtResource("2_4m4n7")
+
+[node name="JoinButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 850.0
+offset_top = 127.0
+offset_right = 989.0
+offset_bottom = 177.0
+text = "Join"
+script = ExtResource("2_4m4n7")

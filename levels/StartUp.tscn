@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://cm85c6cg2ktfi"]
+
+[ext_resource type="Script" path="res://scripts/bm_wrappers_3D/BMCamera3D.cs" id="1_qbatm"]
+[ext_resource type="Script" path="res://scripts/bm_wrappers_3D/BMDirLight3D.cs" id="2_u4ml5"]
+
+[node name="StartUp" type="Node3D"]
+
+[node name="BMCamera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.928109, 0.372308, 0, -0.372308, 0.928109, 0, 2.1501, 4.12163)
+script = ExtResource("1_qbatm")
+
+[node name="BMDirLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.800616, 0.599177, 0, -0.599177, 0.800616, 0, 0, 0)
+script = ExtResource("2_u4ml5")
