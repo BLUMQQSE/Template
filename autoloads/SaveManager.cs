@@ -83,7 +83,11 @@ public partial class SaveManager : Node
     public void Save(Node rootNode, SaveDest dest)
     {
         JsonValue data = ConvertNodeToJson(rootNode);
-        SaveData(rootNode.Name, data, dest);
+        string name = rootNode.Name;
+        if (dest == SaveDest.Player)
+            name = rootNode.GetMeta(Globals.Meta.OwnerId.ToString()).ToString();
+
+        SaveData(name, data, dest);
     }
     public void SaveData(string saveName, JsonValue data, SaveDest dest)
     {
