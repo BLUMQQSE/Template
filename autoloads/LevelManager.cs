@@ -178,7 +178,7 @@ public partial class LevelManager : Node
     /// the new level.
     /// </summary>
     /// <param name="firstLoad">If true, this is the first time the player is being loaded into the game.</param>
-    public void TransferPlayer(Player player, string level, bool firstLoad, Vector3 positionOverride)
+    public void TransferPlayer(Player player, string level, bool firstLoad)
     {
         if (!ActiveLevels.ContainsKey(level))
         {
@@ -223,7 +223,7 @@ public partial class LevelManager : Node
             GD.Print("loading " + name + " from file");
             Player myPlayer = SaveManager.Instance.Load(ownerId.ToString(), SaveManager.SaveDest.Player) as Player;
             PlayerInstantiated?.Invoke(myPlayer);
-            TransferPlayer(myPlayer, myPlayer.GetLevelName(), true, myPlayer.Position);
+            TransferPlayer(myPlayer, myPlayer.GetLevelName(), true);
 
             return myPlayer;
         }
@@ -246,7 +246,7 @@ public partial class LevelManager : Node
         NetworkDataManager.Instance.ApplyNextAvailableUniqueId(player);
         string scenePartition = player.GetMeta(Globals.Meta.LevelPartitionName.ToString()).ToString();
         PlayerInstantiated?.Invoke(player); 
-        TransferPlayer(player, scenePartition, true, player.Position);
+        TransferPlayer(player, scenePartition, true);
 
         return player;
     }
