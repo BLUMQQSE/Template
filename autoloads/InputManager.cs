@@ -258,11 +258,6 @@ public class InputState
         {
             if (Input.IsActionPressed(key))
             {
-                if (ActionStates[key] == PressState.Reset)
-                {
-                    ActionStates[key] = PressState.JustPressed;
-                    change = true;
-                }
                 if (ActionStates[key] == PressState.NotPressed)
                 {
                     ActionStates[key] = PressState.JustPressed;
@@ -303,11 +298,6 @@ public class InputState
         {
             if (Input.IsMouseButtonPressed(key))
             {
-                if (MouseStates[key] == PressState.Reset)
-                {
-                    MouseStates[key] = PressState.JustPressed;
-                    change = true;
-                }
                 if (MouseStates[key] == PressState.NotPressed)
                 {
                     MouseStates[key] = PressState.JustPressed;
