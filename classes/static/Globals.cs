@@ -131,7 +131,7 @@ public static class NodeExtensions
 
     public static T FindParentOfType<T>(this Node node)
     {
-        if (node.GetType() == typeof(T))
+        if (node is T)
         {
             return (T)(object)node;
         }
