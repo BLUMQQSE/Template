@@ -166,25 +166,7 @@ public partial class CommandHandler : Node
         {
             return;
         }
-
-        //foreach (var item in args)
-         //   GD.Print(args.ToString());
-        //if (args.Count == 0)
-          //  ownerOfMessage.Call(methodName);
-
         ownerOfMessage.Call(methodName, args.ToArray());
-        /*
-        if(args.Count == 1)
-            ownerOfMessage.Call(methodName, args[0]);
-        else if (args.Count == 2)
-            ownerOfMessage.Call(methodName, args[0], args[1]);
-        else if (args.Count == 3)
-            ownerOfMessage.Call(methodName, args[0], args[1], args[2]);
-        else if (args.Count == 4)
-            ownerOfMessage.Call(methodName, args[0], args[1], args[2], args[3]);
-        else if (args.Count == 5)
-            ownerOfMessage.Call(methodName, args[0], args[1], args[2], args[3], args[4]);
-        */
     }
 
     private void FreeCommand(ref Node ownerOfMessage, List<string> args)
